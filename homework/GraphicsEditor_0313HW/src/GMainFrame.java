@@ -29,5 +29,7 @@ public class GMainFrame extends JFrame {
 		
 		this.drawingPanel = new GDrawingPanel();
 		this.add(drawingPanel);
+		
+		shapeToolBar.setDrawingPanel(drawingPanel);
 	}
 }
