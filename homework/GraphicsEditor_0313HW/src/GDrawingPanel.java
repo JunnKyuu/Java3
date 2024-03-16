@@ -26,36 +26,61 @@ public class GDrawingPanel extends JPanel {
 	}
 	
 	private class MouseEventHandler implements MouseListener, MouseMotionListener {
-		// 여기서는 교통정리만하고, drawingPanel에 모두 시키기
 		
 		@Override
 		public void mouseClicked(MouseEvent e) {
-			
-		}	
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
+		}
+	
 		@Override
 		public void mousePressed(MouseEvent e) {
 			draw(e.getX(), e.getY());
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
 		}
 		@Override
 		public void mouseReleased(MouseEvent e) {
 			draw(e.getX(), e.getY());
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
 		}
 		@Override
 		public void mouseDragged(MouseEvent e) {
 			draw(e.getX(), e.getY());
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
 		}
 		
 		@Override
 		public void mouseMoved(MouseEvent e) {
-
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
 		}
 		@Override
 		public void mouseEntered(MouseEvent e) {
-			
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
 		}
 		@Override
 		public void mouseExited(MouseEvent e) {
+			StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+		    StackTraceElement methodCaller = stackTrace[1];
+		    String methodName = methodCaller.getMethodName();
+		    System.out.println(methodName);
+		}
 
-		}	
 	}
 }
