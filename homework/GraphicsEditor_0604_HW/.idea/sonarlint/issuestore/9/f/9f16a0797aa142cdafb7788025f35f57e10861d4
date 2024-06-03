@@ -1,0 +1,24 @@
+
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(Ö»Œ©J$31476bb8-c0c4-4902-b8ac-34ae7b4b23b1
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(Ö»Œ©J$978111fd-c245-410e-bb5e-9051ccddb49a
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$c6a1510f-101c-451e-9a05-5645f71c27be
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$4d9fa8d3-de13-4411-a776-86c3b34484b6
+”
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Í÷™«üÿÿÿÿJ$92b5970b-aab0-49b1-bad0-22d385772f17
+‰
+java:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(Í÷™«üÿÿÿÿJ$e5f07ee4-2ea7-4434-87ef-318fb6c2db83
+v
+java:S1161"":Add the "@Override" annotation above this method signature(ºì¦İJ$b25e3774-5caa-4cf0-85fb-36b6d4931022
+m
+java:S1128"1Remove this unused import 'java.awt.geom.Line2D'.(ìôÆÆJ$4a88cee7-59ab-424b-9c0f-f5110f388c53
+r
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿJ$9c2a9fa5-c4dd-4397-ac92-6ff7d58aa534
+w
+java:S1128	"6Remove this unused import 'shapetools.GShape.EAnchor'.(¼æÎüùÿÿÿÿJ$f762b833-cc8a-45d9-a832-758489e98526
+x
+java:S1128
+"<Remove this unused import 'shapetools.GShape.EDrawingStyle'.(®´‘ÛJ$13e7868f-ee9c-464c-a49c-c31a3972f2a3

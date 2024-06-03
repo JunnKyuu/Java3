@@ -1,0 +1,59 @@
+
+˜	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½×„²ÿÿÿÿÿ8×šğ•ü1J$321c890b-016d-463c-835e-dedb2999be9c
+“	java:S117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ä™Ú8Øšğ•ü1J$f47fa023-f946-487c-a8d2-db063e0b22b1
+‰
+java:S2184j"ACast one of the operands of this addition operation to a "float".(í—å™úÿÿÿÿ8Úšğ•ü1J$33bc5959-5563-438f-a492-1d5d58bf6797
+Œ
+java:S2184j"DCast one of the operands of this subtraction operation to a "float".(í—å™úÿÿÿÿ8Ûšğ•ü1J$856bc125-d999-481d-bd30-4ac8d43e7cc4
+‰
+java:S2184k"ACast one of the operands of this addition operation to a "float".(¸ºğÎøÿÿÿÿ8Ûšğ•ü1J$1843847a-63b1-4fc6-bd77-c6d8829da047
+„
+java:S2184l"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8Ûšğ•ü1J$664e99b7-1782-4497-9e70-70df38c7a8be
+„
+java:S2184l"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8Ûšğ•ü1J$9384f048-f5d3-4b3e-a545-e903cbe220aa
+ƒ
+java:S2184m"ACast one of the operands of this addition operation to a "float".(úÍºk8Ûšğ•ü1J$b7891db1-280d-4d9b-880d-c785a4aa86eb
+ƒ
+java:S2184m"ACast one of the operands of this addition operation to a "float".(úÍºk8Ûšğ•ü1J$77c371cb-35e4-4383-94e3-605f01a7cb5f
+‰
+java:S2184n"ACast one of the operands of this addition operation to a "float".(ø‘ÚÃúÿÿÿÿ8Ûšğ•ü1J$623af45c-c103-43f1-8469-832332e17998
+‰
+java:S2184p"ACast one of the operands of this addition operation to a "float".(úâÜ€ÿÿÿÿÿ8Ûšğ•ü1J$a5db5fe7-afa4-4f23-b30a-a67337dd37f8
+‰
+java:S2184q"ACast one of the operands of this addition operation to a "float".(©ì´şıÿÿÿÿ8Ûšğ•ü1J$f9abf4fa-b0e0-448a-bd08-901798e043b8
+‰
+java:S2184r"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8éšğ•ü1J$9d9ac8f1-a23b-48e3-b975-0c534d025de6
+‰
+java:S2184r"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8êšğ•ü1J$ded7235f-f38e-4649-9460-470f53be10ff
+‰
+java:S2184³"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8êšğ•ü1J$e5367d5f-50f2-42d4-838f-bcbfbbdd00b8
+‰
+java:S2184³"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8êšğ•ü1J$05c6b04a-e4f7-4b03-a2c1-aca14a333cbd
+‡
+java:S1659"?Declare "y1" and all following declarations on a separate line.(Î¡†§şÿÿÿÿ8öšğ•ü1J$8a0aab9b-6825-484e-840b-51788d37199a
+|
+java:S5993;"9Change the visibility of this constructor to "protected".(ÛÉ®Ç8÷šğ•ü1J$fbde43c5-8ea8-4aeb-885c-4984355ac5a2
+j
+java:S19489"'Make "shape" transient or serializable.(â­àà8øšğ•ü1J$b40eafc3-9753-4a2d-bd97-49f67b39495b
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ëá± øÿÿÿÿ8ùšğ•ü1J$823915ed-5204-4ba1-8679-73be9bf39d7b
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•¨Š¨8ùšğ•ü1J$fc49b89f-22c3-4904-9aa5-71e9f357f42c
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ŠØÉË8úšğ•ü1J$6bebbd01-25db-4b78-956f-45bd89c30bac
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ßú•å8úšğ•ü1J$8c9c1d01-482a-401f-8803-96b328a8dfb1
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¤Û¬÷üÿÿÿÿ8úšğ•ü1J$19415d7d-ff45-4b19-a19d-e0fe70914189
+¡	java:S115""ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÆïÌëüÿÿÿÿ8ûšğ•ü1J$edbf0c25-556c-4703-98aa-be342eb3355a
+œ	java:S115#"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¸±¡ê8ûšğ•ü1J$d031dc06-3f99-43b2-b9e0-e4fe57093728
+¡	java:S115$"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(„à’‚ÿÿÿÿÿ8ûšğ•ü1J$164ec088-55cf-48ba-b6df-5b7dd2104fad
+œ	java:S115%"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ü£†Ó8ûšğ•ü1J$71dad331-e569-4f3f-9d26-ba5f57bd8fb9
+œ	java:S115&"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÏÉÑ÷8ûšğ•ü1J$53da0ad4-eb26-470f-8255-51914af90620
+œ	java:S115'"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«†µ8ûšğ•ü1J$a561c505-8680-4faf-86eb-3cfe0d8851e9
+œ	java:S115("ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†½Ôå8ûšğ•ü1J$189f1771-bd37-4e24-9960-6c1eed11baf7
+œ	java:S115)"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰¼‚†8ûšğ•ü1J$3ddb1b9f-7560-4006-a951-706209bfd192
+¡	java:S115*"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Óä–¸ûÿÿÿÿ8ûšğ•ü1J$7b844ccd-1830-4176-a87b-4b836a826d81
+œ	java:S115+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ü¡Ù»8ûšğ•ü1J$46223635-ba48-4774-9ec4-ef9516a6f1ae
+—
+java:S2975¡"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(…œŒÊ8ƒ›ğ•ü1J$f86a06b0-1d07-4b4a-9462-aa1662c547bd
+s
+java:S1172¤"/Remove this unused method parameter "graphics".(³™Ê8…›ğ•ü1J$dfdaa6c5-3ecb-4017-8064-1dee8fe693e4
+~
+java:S1128
+";Remove this unused import 'java.awt.geom.RectangularShape'.(¤¶â8ˆ›ğ•ü1J$c05bf989-7be4-4659-89e6-0da6780b79a4

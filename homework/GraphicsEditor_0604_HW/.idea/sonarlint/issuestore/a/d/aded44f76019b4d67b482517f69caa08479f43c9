@@ -1,0 +1,52 @@
+
+t
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿ
+œ
+java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(·òşÿÿÿÿ
+{
+java:S1149+"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì
+{
+java:S1149I"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ
+n	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(À±Ñ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”ìÕ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ü»¶
+o	java:S115 "ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(«…À¦
+Q	java:S125$"<This block of commented-out lines of code should be removed.(‰àúœ
+Q	java:S125("<This block of commented-out lines of code should be removed.(ôƒ«Í
+Q	java:S1255"<This block of commented-out lines of code should be removed.(ÁåÍ±
+P
+java:S1161S":Add the "@Override" annotation above this method signature(¤™–Å
+E
+java:S1172h"/Remove these unused method parameters "x", "y".(ÎŞ—ş
+Q	java:S125i"<This block of commented-out lines of code should be removed.(É™îª
+
+java:S1186Ğ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ
+
+java:S1186Ô"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ
+?
+java:S1128	")Remove this unused import 'java.io.File'.(†Ğ¥Å
+J
+java:S1128
+"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ
+K
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ
+L
+java:S1128"6Remove this unused import 'java.io.ObjectInputStream'.(Éæéœ
+R
+java:S1128"7Remove this unused import 'java.io.ObjectOutputStream'.(é»Óºûÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.io.BufferedInputStream'.(Š—€åûÿÿÿÿ
+T
+java:S1128"9Remove this unused import 'java.io.BufferedOutputStream'.(«èÍôıÿÿÿÿ
+J
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg
+Q
+java:S1128"6Remove this unused import 'shapetools.GShape.EAnchor'.(¼æÎüùÿÿÿÿ
+@
+java:S3398^"*Move this method into "MouseEventHandler".(šÁº
+@
+java:S3398h"*Move this method into "MouseEventHandler".(ÎŞ—ş
+?
+java:S3398Y"*Move this method into "MouseEventHandler".(¿òU
+E
+java:S3398c"*Move this method into "MouseEventHandler".(ÉÊºùÿÿÿÿ
