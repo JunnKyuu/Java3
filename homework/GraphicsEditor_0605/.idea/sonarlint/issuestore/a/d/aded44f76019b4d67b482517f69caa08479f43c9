@@ -1,0 +1,24 @@
+
+š
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿJ$4f4c16e8-5900-41f2-a1a5-8215b68cbf6b
+¡
+java:S1149%"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ìJ$ec953da9-a2e8-41c2-a531-41c5ab0dcc02
+¡
+java:S1149="eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©ÐJ$3f525c95-a94f-4b89-810c-ca8f847a81a3
+v
+java:S1161E":Add the "@Override" annotation above this method signature(¤™–ÅJ$35f76678-d0bf-477f-8c93-729409488317
+w	java:S125Z"<This block of commented-out lines of code should be removed.(É™îªJ$a78a117d-fff8-4305-898e-1dd2a375888b
+}	java:S125‘"<This block of commented-out lines of code should be removed.(±ÌåßüÿÿÿÿJ$b148d19e-dc8d-4922-ae5a-fee5fe40862a
+n
+java:S5261¹"1Add explicit curly braces to avoid dangling else.(€„Ê¾J$d8fde2f4-d57b-493e-b49d-579496c64167
+x	java:S125Æ"<This block of commented-out lines of code should be removed.(Æé¡¦J$1273acf9-c457-4553-b046-650a253d222f
+f
+java:S3398P"*Move this method into "MouseEventHandler".(šÁºžJ$fc610044-6319-46a0-bace-4d1548df0355
+f
+java:S3398g"*Move this method into "MouseEventHandler".(¸žÅëJ$2842bf69-499b-4fb2-a642-e572ed6d171a
+k
+java:S3398U"*Move this method into "MouseEventHandler".(ÉÊºùÿÿÿÿJ$6099b55e-ccd1-46e0-8617-f226b195425a
+e
+java:S3398K"*Move this method into "MouseEventHandler".(¿òUJ$ff84b1e1-dc79-4c45-ae5a-f698bb8a6458
+f
+java:S3398Y"*Move this method into "MouseEventHandler".(ÎÞ—þJ$4132f088-49cb-4aac-9d2a-c12f86685260
