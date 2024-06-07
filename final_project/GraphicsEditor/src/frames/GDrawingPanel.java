@@ -5,7 +5,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
-import java.nio.Buffer;
 import java.util.Vector;
 
 import javax.swing.JPanel;
@@ -37,6 +36,9 @@ public class GDrawingPanel extends JPanel {
 	private Vector<GShape> shapes;
 	private GShape shapeTool;
 	private GShape currentShape;
+
+	private BufferedImage bufferedImage;
+	private Graphics2D graphics;
 
 	// constructors
 	public GDrawingPanel() {
@@ -72,14 +74,10 @@ public class GDrawingPanel extends JPanel {
 		for (GShape shape : shapes) { shape.draw(graphics); }
 	}
 
-	// ################################################## 수정하기
-	private BufferedImage bufferedImage;
-	private Graphics2D graphics;
-
 	private void startDrawing(int x, int y) {
 		bufferedImage = new BufferedImage(
 				this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_RGB);
-		graphics = (Graphics2D) bufferedImage.getGraphics();
+		graphics = (Graphics2D)bufferedImage.getGraphics();
 		graphics.setColor(this.getForeground());
 		graphics.setBackground(this.getBackground());
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
@@ -90,16 +88,6 @@ public class GDrawingPanel extends JPanel {
 
 	private void keepDrawing(int x, int y) {
 		currentShape.movePoint(x, y);
-
-		/*
-		// ##################################################
-		// 여기서 imageGraphics를 그린다. 그런 다음에 가져와서 그리면 된다.
-		// 위로 빼서 만들기
-		bufferedImage = new BufferedImage(this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_RGB);
-		// 새로운 그래픽이 생기면 이미지로 그려짐
-		graphics = (Graphics2D) bufferedImage.getGraphics();
-		*/
-
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
 		currentShape.drag(graphics);
 		getGraphics().drawImage(
@@ -135,7 +123,7 @@ public class GDrawingPanel extends JPanel {
 				if (shapeTool.getEDrawingStyle() == EDrawingStyle.eNPStyle) {
 					startDrawing(e.getX(), e.getY());
 					eDrawingState = EDrawingState.eNPState;
-				}else {
+				} else {
 					startDrawing(e.getX(),e.getY());
 					eDrawingState = EDrawingState.e2PState;
 				}
@@ -163,10 +151,10 @@ public class GDrawingPanel extends JPanel {
 			if (eDrawingState == EDrawingState.eIdle) {
 				changeCoursor(e.getX(), e.getY());
 //				eDrawingState = EDrawingState.eTransformation;
-			}else if(eDrawingState == EDrawingState.eNPState){
+			} else if(eDrawingState == EDrawingState.eNPState){
 				keepDrawing(e.getX(),e.getY());
 				eDrawingState = EDrawingState.eNPState;
-			}else if(eDrawingState == EDrawingState.e2PState) {
+			} else if(eDrawingState == EDrawingState.e2PState) {
 				keepDrawing(e.getX(),e.getY());
 			}
 		}
@@ -174,7 +162,7 @@ public class GDrawingPanel extends JPanel {
 		public void mousePressed(MouseEvent e) {
 			if (eDrawingState == EDrawingState.eIdle) {
 				currentShape = onShape(e.getX(),e.getY());
-				if(currentShape==null) {
+				if(currentShape == null) {
 					if (shapeTool.getEDrawingStyle() == EDrawingStyle.e2PStyle) {
 						startDrawing(e.getX(), e.getY());
 						eDrawingState = EDrawingState.e2PState;
@@ -188,7 +176,6 @@ public class GDrawingPanel extends JPanel {
 						// resize
 						currentShape.startResize(getGraphics(),e.getX(),e.getY());
 					}
-					
 					eDrawingState = EDrawingState.eTransformation;
 				}
 					//transforamtion

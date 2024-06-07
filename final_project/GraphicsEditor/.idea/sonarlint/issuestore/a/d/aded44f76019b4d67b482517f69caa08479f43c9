@@ -1,0 +1,18 @@
+
+¡
+java:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿ8É¶”æş1J$8e48fe57-4c24-4961-b8a0-1c0175defba8
+w
+java:S1948("/Make "bufferedImage" transient or serializable.(¶—Ìüÿÿÿÿ8á¶”æş1J$0e9b03dc-64c3-4187-920f-cc438e096e89
+r
+java:S1948)"*Make "graphics" transient or serializable.(õùÂšıÿÿÿÿ8â¶”æş1J$57bcd673-0e65-413d-8c41-acc4da7173eb
+¨
+java:S1149$"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì8ã¶”æş1J$a016679d-3ee1-4045-9ec5-837f42cdec57
+¨
+java:S1149A"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ8ã¶”æş1J$72886276-49b2-45ae-8ae1-bc5aeb3a99ac
+}
+java:S1161I":Add the "@Override" annotation above this method signature(¤™–Å8è¶”æş1J$a720b814-9412-477c-bd0f-5b78c88c8bc8
+~	java:S125d"<This block of commented-out lines of code should be removed.(É™îª8¤¶’çş1J$7071337a-52da-43fa-9b0d-eaa83bce4e7d
+„	java:S125™"<This block of commented-out lines of code should be removed.(±Ìåßüÿÿÿÿ8ó¶”æş1J$f0f4786b-e8f2-4dcd-9d73-24b781c6b6df
+u
+java:S5261À"1Add explicit curly braces to avoid dangling else.(€„Ê¾8ŠÏ“çş1J$39b0a017-e3e0-4c3a-bfde-0d5229c611cc
+	java:S125Í"<This block of commented-out lines of code should be removed.(Æé¡¦8ú¶”æş1J$223f92b2-afec-4c7f-bd01-b7cda5bc6f9c

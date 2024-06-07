@@ -9,11 +9,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.Vector;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
 import frames.GDrawingPanel;
+import shapetools.GShape;
 
 public class GFileMenu extends JMenu {
 
@@ -45,7 +47,7 @@ public class GFileMenu extends JMenu {
 	        ObjectInputStream objectInputStream = new ObjectInputStream(
 	                new BufferedInputStream(new FileInputStream(file))); // 이미 생성한 File 객체 사용
 	        Object object = objectInputStream.readObject();
-	        this.drawingpanel.setShapes(object);
+	        this.drawingpanel.setShapes((Vector<GShape>) object);
 	        this.repaint(); // 화면 갱신
 	        objectInputStream.close(); 
 	    } catch (IOException | ClassNotFoundException e) {

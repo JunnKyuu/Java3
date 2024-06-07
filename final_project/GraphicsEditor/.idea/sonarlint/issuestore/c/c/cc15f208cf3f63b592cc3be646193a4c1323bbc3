@@ -1,0 +1,55 @@
+
+˜	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½×„²ÿÿÿÿÿ8ŸåÎæþ1J$854c1231-af97-4ef8-930b-7659810d626c
+“	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ä™Ú8ŸåÎæþ1J$56cc1cad-aa36-45e0-bdd8-e16bcb6dc93c
+‰
+java:S2184Q"ACast one of the operands of this addition operation to a "float".(í—å™úÿÿÿÿ8¡åÎæþ1J$aafd409c-ed5b-407a-aa6c-185da68738ee
+Œ
+java:S2184Q"DCast one of the operands of this subtraction operation to a "float".(í—å™úÿÿÿÿ8¡åÎæþ1J$27e7e4cd-56d8-4854-9c92-20a00b410025
+‰
+java:S2184R"ACast one of the operands of this addition operation to a "float".(¸ºðÎøÿÿÿÿ8¡åÎæþ1J$0b5e5c5f-41e5-40a0-9020-ff8849f049cd
+„
+java:S2184S"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8¡åÎæþ1J$a46099f3-a14d-4aa0-8131-3a5f24dae31b
+„
+java:S2184S"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8¡åÎæþ1J$b28d6dfe-08c7-472e-beac-a8e30d6a1e34
+ƒ
+java:S2184T"ACast one of the operands of this addition operation to a "float".(úÍºk8¡åÎæþ1J$7db5838c-c7e8-4248-8dc7-5dde1e3f9c50
+ƒ
+java:S2184T"ACast one of the operands of this addition operation to a "float".(úÍºk8¡åÎæþ1J$38d3c465-8b35-46fe-8600-483fbb8b4028
+‰
+java:S2184U"ACast one of the operands of this addition operation to a "float".(ø‘ÚÃúÿÿÿÿ8¡åÎæþ1J$b519d3d9-af40-4102-a874-3963b2d6acd8
+‰
+java:S2184W"ACast one of the operands of this addition operation to a "float".(©ì´þýÿÿÿÿ8¢åÎæþ1J$c10b2165-ca61-47ac-93e9-1d0fc2d6658c
+‰
+java:S2184X"ACast one of the operands of this addition operation to a "float".(úâÜ€ÿÿÿÿÿ8¢åÎæþ1J$27f82cb9-64f0-4dc7-916e-f10d722f2528
+‰
+java:S2184Y"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8¢åÎæþ1J$88494576-b9ca-441e-95e8-8f04c80f14aa
+‰
+java:S2184Y"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8¢åÎæþ1J$ce99452e-1ed6-4222-b268-93f7661577b7
+‰
+java:S2184®"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8Êß˜çþ1J$739ad65b-8398-43e9-b763-a036a1aba2b9
+‰
+java:S2184®"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8Êß˜çþ1J$5d37bbc2-b870-484b-b255-ed9d814b1eff
+£
+java:S4144¸"ZUpdate this method so that its implementation is not identical to "startMove" on line 155.(® “ãùÿÿÿÿ8µåÎæþ1J$2476f787-0eea-4034-94ed-ae08051f94fe
+‡
+java:S1659"?Declare "y1" and all following declarations on a separate line.(Î¡†§þÿÿÿÿ8¶åÎæþ1J$d7635d4f-a291-421c-a379-7b5cbd6d47d8
+h
+java:S16594" Declare "sy" on a separate line.(ËÆÞ‘øÿÿÿÿ8¶åÎæþ1J$632dc073-2494-4f79-8c2a-29637a49035c
+h
+java:S16595" Declare "dy" on a separate line.(½ú¿µùÿÿÿÿ8¶åÎæþ1J$76ac38ef-4769-4e28-813b-68b52eecc65c
+™
+java:S14504"QRemove the "sx" field and declare it as a local variable in the relevant methods.(ËÆÞ‘øÿÿÿÿ8·åÎæþ1J$325c9ff2-35c0-4e1e-ac18-bcc2be99c3b4
+™
+java:S14504"QRemove the "sy" field and declare it as a local variable in the relevant methods.(ËÆÞ‘øÿÿÿÿ8·åÎæþ1J$cdc4fb3a-d49a-4573-bba8-abd02e13a9d7
+|
+java:S5993c"9Change the visibility of this constructor to "protected".(ÛÉ®Ç8¸åÎæþ1J$8c77e094-3570-4da6-ad6f-1618487aa31e
+j
+java:S1948"'Make "shape" transient or serializable.(â­àà8¸åÎæþ1J$8db32620-aea8-4994-a064-bc0fcf14236a
+q
+java:S1172@"/Remove these unused method parameters "x", "y".(½Ç”z8½åÎæþ1J$bf025181-e621-4639-a4b9-c8ad5a39ee52
+–
+java:S2975q"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(…œŒÊ8ÁåÎæþ1J$85b48659-dbc5-4769-ac30-a85c2628020c
+x
+java:S1172³"/Remove these unused method parameters "x", "y".(«‡€Øýÿÿÿÿ8ÆåÎæþ1J$0e6defe7-6ccc-4649-8d34-ca871817c573
+s
+java:S1172þ"/Remove these unused method parameters "x", "y".(¬»ú›8ËåÎæþ1J$639a39af-8a3c-4ea2-a618-f0137d87e839

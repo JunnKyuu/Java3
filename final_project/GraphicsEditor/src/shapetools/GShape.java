@@ -8,16 +8,12 @@ import java.awt.Shape;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
-import java.awt.geom.RectangularShape;
 import java.io.Serializable;
-import java.util.Vector;
-
-import shapetools.GShape.EAnchors;
 
 public abstract class GShape implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public enum EDrawingStyle {
 		e2PStyle,
 		eNPStyle
@@ -49,13 +45,13 @@ public abstract class GShape implements Serializable {
 			return this.cursor;
 		}
 	}
-	
+
 	private EAnchors eSelectedAnchor;
 	protected Ellipse2D.Float[] anchors;
-	
-	private double sx, sy; 
-	private double dx, dy; 
-	
+
+	private double sx, sy;
+	private double dx, dy;
+
 	public EDrawingStyle getEDrawingStyle() {
 		return this.eDrawingStyle;
 	}
@@ -77,11 +73,11 @@ public abstract class GShape implements Serializable {
 		int x = rectangle.x;
 		int y = rectangle.y;
 		int w = rectangle.width;
-		int h = rectangle.height;	
+		int h = rectangle.height;
 		int ANCHOR_WIDTH = 10;
 		int ANCHOR_HEIGHT = 10;
 
-		this.anchors = new Ellipse2D.Float[EAnchors.values().length-1]; 
+		this.anchors = new Ellipse2D.Float[EAnchors.values().length-1];
 		this.anchors[EAnchors.eRR.ordinal()] = new Ellipse2D.Float(x+w/2,y-30, ANCHOR_WIDTH,ANCHOR_HEIGHT);
 		this.anchors[EAnchors.eNN.ordinal()] = new Ellipse2D.Float(x+w/2, y, ANCHOR_WIDTH,ANCHOR_HEIGHT);
 		this.anchors[EAnchors.eSS.ordinal()] = new Ellipse2D.Float(x+w/2, y+h, ANCHOR_WIDTH,ANCHOR_HEIGHT);
@@ -99,7 +95,7 @@ public abstract class GShape implements Serializable {
 	public void clearAnchors() {
 		this.anchors = null;
 	}
-	
+
 	public GShape(EDrawingStyle eDrawingStyle, Shape shape) {
 		this.eDrawingStyle = eDrawingStyle;
 		this.shape = shape;
@@ -156,14 +152,14 @@ public abstract class GShape implements Serializable {
 	}
 
 	// move
-	public void startMove(Graphics graphics,int x, int y) {
+	public void startMove(Graphics graphics, int x, int y) {
 		this.drawAnchors(graphics);
 		this.x2 = x;
 		this.y2 = y;
 		this.ox2 = x1;
 		this.oy2 = y1;
 	}
-	public void keepMove(Graphics graphics,int x, int y) {
+	public void keepMove(Graphics graphics, int x, int y) {
 		this.ox2 = this.x2;
 		this.oy2 = this.y2;
 		this.x2 = x;
@@ -171,13 +167,13 @@ public abstract class GShape implements Serializable {
 
 		// 수정 사라지게
 		Graphics2D graphics2D = (Graphics2D) graphics;
-//		graphics2D.setXORMode(graphics2D.getBackground());
-//		graphics2D.draw(this.shape);
-		
+		graphics2D.setXORMode(graphics2D.getBackground());
+		graphics2D.draw(this.shape);
+
 		AffineTransform affineTransform = new AffineTransform();
-		affineTransform.setToTranslation(x2-ox2,y2-oy2);
+		affineTransform.setToTranslation(x2 - ox2,y2 - oy2);
 		this.shape = affineTransform.createTransformedShape(this.shape);
-		
+
 		graphics2D.draw(this.shape);
 	}
 	public void stopMove(Graphics graphics,int x, int y) {
@@ -197,19 +193,19 @@ public abstract class GShape implements Serializable {
 		sy = 1.0;
 		dx = 0;
 		dy = 0;
-		
+
 		double cx = 0;
 		double cy = 0;
 		double w = this.shape.getBounds().getWidth();
 		double h = this.shape.getBounds().getHeight();
-		
+
 		switch(this.eSelectedAnchor) {
 		case eEE:
 			sx = (w + x2 - ox2) / w;
 			cx = this.anchors[EAnchors.eWW.ordinal()].getCenterX();
 			dx = cx - cx * sx;
 			break;
-		 case eWW: 
+		 case eWW:
 			 if(x2 - ox2 < 0) {
 				sx = (w - x2 + ox2) / w;
 			} else {
@@ -218,12 +214,12 @@ public abstract class GShape implements Serializable {
 			 cx = this.anchors[EAnchors.eEE.ordinal()].getCenterX();
 			 dx = cx * sx * - 1 + cx;
 			 break;
-		 case eSS: 
+		 case eSS:
 			 sy = (h + y2 - oy2) / h;
 			 cy = this.anchors[EAnchors.eNN.ordinal()].getCenterY();
 			 dy = cy - cy * sy;
 			 break;
-		 case eNN: 
+		 case eNN:
 			 if(y2 - oy2 < 0) {
 				sy = (h - y2 + oy2) / h;
 			} else {
@@ -232,7 +228,7 @@ public abstract class GShape implements Serializable {
 			 cy = this.anchors[EAnchors.eSS.ordinal()].getCenterY();
 			 dy = cy - cy * sy;
 			 break;
-		 default: 
+		 default:
 			 break;
 		}
 		return new Point2D.Double(sx, sy);
@@ -241,7 +237,7 @@ public abstract class GShape implements Serializable {
 		Graphics2D graphics2D = (Graphics2D) graphics;
 		graphics2D.setXORMode(graphics2D.getBackground());
 		graphics2D.draw(this.shape);
-		
+
 		this.ox2 = this.x2;
 		this.oy2 = this.y2;
 		this.x2 = x;
