@@ -1,24 +1,18 @@
 
 ¡
-java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿ8É¶”æş1J$580fc14d-ea4b-43a1-a4a6-8849704e183d
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿ8º„÷Àÿ1J$45024eab-b460-4dd4-a563-35e689f0db9a
 w
-java:S1948*"/Make "bufferedImage" transient or serializable.(¶—Ìüÿÿÿÿ8á¶”æş1J$5d2949ef-581a-4991-be62-82fc7145ea27
+java:S1948*"/Make "bufferedImage" transient or serializable.(¶—Ìüÿÿÿÿ8Í„÷Àÿ1J$29f2da7e-578e-4e03-b82c-c8bc9e710f5c
 r
-java:S1948+"*Make "graphics" transient or serializable.(õùÂšıÿÿÿÿ8â¶”æş1J$45cbd30f-9ecc-4201-a067-3effb84e6ded
+java:S1948+"*Make "graphics" transient or serializable.(õùÂšıÿÿÿÿ8Í„÷Àÿ1J$a6d62e7c-1262-4fc9-a542-02bcbf912a5b
 ¨
-java:S1149&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì8ã¶”æş1J$0f7d35e2-8b15-4f49-b9b7-eb5db80a865b
+java:S1149&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì8Î„÷Àÿ1J$533360f7-aec7-45fc-92cb-3c1b9a2bef59
 ¨
-java:S1149C"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ8ã¶”æş1J$84a4fade-b138-4f02-86a4-ee53f325f67b
-}
-java:S1161K":Add the "@Override" annotation above this method signature(¤™–Å8 ô›»ÿ1J$e78f8d80-997c-44a5-97a2-67f5e0847edb
-~	java:S125d"<This block of commented-out lines of code should be removed.(É™îª8¤¶’çş1J$6565aa8a-c3a2-4666-a6cb-630cff6f3e66
-„	java:S125§"<This block of commented-out lines of code should be removed.(±Ìåßüÿÿÿÿ8ó¶”æş1J$8dc6ef8d-eaf7-4f7a-a9c5-2e0a10cb4961
-u
-java:S5261Î"1Add explicit curly braces to avoid dangling else.(€„Ê¾8ŠÏ“çş1J$87ce08d0-849e-4b5b-8d00-14891612a486
-	java:S125Û"<This block of commented-out lines of code should be removed.(Æé¡¦8ú¶”æş1J$778a1959-0559-4403-8273-64744f650080
+java:S1149C"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ8Î„÷Àÿ1J$1bfbf46a-c091-40c8-9a49-2242d276f330
+	java:S125ß"<This block of commented-out lines of code should be removed.(Æé¡¦8ß„÷Àÿ1J$376e65b8-87e7-4dc9-b096-2e04b75c22c3
 x
-java:S1144j"0Remove this unused private "startMoving" method.(‚¤½Ôşÿÿÿÿ8ŸÚÇ»ÿ1J$210e1494-4feb-4c92-88f5-9a0396b92797
+java:S1144o"0Remove this unused private "startMoving" method.(‚¤½Ôşÿÿÿÿ8á„÷Àÿ1J$9b760ab8-3297-42d5-8669-74277b4256a9
 w
-java:S1144m"/Remove this unused private "keepMoving" method.(Á¼Ñºúÿÿÿÿ8ŸÚÇ»ÿ1J$125c5d78-d495-4f02-8429-611c976b16a9
-L
-java:S1144p"/Remove this unused private "stopMoving" method.(©ìãÀ8Ñ‹Ë»ÿ1
+java:S1144r"/Remove this unused private "keepMoving" method.(Á¼Ñºúÿÿÿÿ8á„÷Àÿ1J$3d2448a7-c78a-4cbb-ac76-aee7dbbb0b69
+r
+java:S1144u"/Remove this unused private "stopMoving" method.(©ìãÀ8á„÷Àÿ1J$36106842-2363-4814-965e-bf03e1fc6891

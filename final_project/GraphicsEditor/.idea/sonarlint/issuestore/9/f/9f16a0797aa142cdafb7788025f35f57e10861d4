@@ -1,11 +1,11 @@
 
 
-java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$5f0799fa-9b46-41dd-9428-69ff9650b508
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$69640a20-1e8c-4634-8531-ead51c9f9664
 
-java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$42d0d8b2-702c-4025-a6f4-d1b73e475c0a
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$d81fc75f-875c-4727-9f54-7e7048b4131e
 ”
-java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Í÷™«üÿÿÿÿJ$601758fe-edef-4167-a6a7-f4fc63deb1f7
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Í÷™«üÿÿÿÿJ$89857dbe-6610-4876-ba80-d5250f146be5
 ‰
-java:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(Í÷™«üÿÿÿÿJ$dfada381-38cf-4652-aef9-b12f603cf6bb
-|	java:S125"<This block of commented-out lines of code should be removed.(”Ç¯ÎşÿÿÿÿJ$c143e4ed-4365-46ce-8e62-bdb45055f893
-w	java:S125"<This block of commented-out lines of code should be removed.(—ªÊJ$10eb8a2e-bd8d-4c51-9196-fc2fcae94b34
+java:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(Í÷™«üÿÿÿÿJ$f4f5edc5-507d-4350-a7fb-74d9e572a7b8
+|	java:S125"<This block of commented-out lines of code should be removed.(”Ç¯ÎşÿÿÿÿJ$53793733-6b8f-4043-a995-0ff4d3eb75ef
+w	java:S125"<This block of commented-out lines of code should be removed.(—ªÊJ$b5b4559e-399a-40c3-b66b-6f616c297b67
