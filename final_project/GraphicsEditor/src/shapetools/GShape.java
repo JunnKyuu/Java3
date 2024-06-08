@@ -8,10 +8,12 @@ import java.awt.Shape;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
+import java.io.Serial;
 import java.io.Serializable;
 
 public abstract class GShape implements Serializable {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	public enum EDrawingStyle {
@@ -37,13 +39,8 @@ public abstract class GShape implements Serializable {
 		eMM(new Cursor(Cursor.HAND_CURSOR));
 
 		private Cursor cursor;
-		private EAnchors(Cursor cursor) {
-			this.cursor = cursor;
-		}
-
-		public Cursor getCursor() {
-			return this.cursor;
-		}
+		private EAnchors(Cursor cursor) { this.cursor = cursor; }
+		public Cursor getCursor() { return this.cursor; }
 	}
 
 	private EAnchors eSelectedAnchor;
@@ -165,10 +162,9 @@ public abstract class GShape implements Serializable {
 		this.x2 = x;
 		this.y2 = y;
 
-		// 수정 사라지게
 		Graphics2D graphics2D = (Graphics2D) graphics;
-		graphics2D.setXORMode(graphics2D.getBackground());
-		graphics2D.draw(this.shape);
+//		graphics2D.setXORMode(graphics2D.getBackground());
+//		graphics2D.draw(this.shape);
 
 		AffineTransform affineTransform = new AffineTransform();
 		affineTransform.setToTranslation(x2 - ox2,y2 - oy2);

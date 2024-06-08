@@ -6,8 +6,11 @@ import global.Constants;
 import menus.GFileMenu;
 import menus.GMenuItem;
 
+import java.io.Serial;
+
 public class GMenuBar extends JMenuBar {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	private GFileMenu fileMenu;

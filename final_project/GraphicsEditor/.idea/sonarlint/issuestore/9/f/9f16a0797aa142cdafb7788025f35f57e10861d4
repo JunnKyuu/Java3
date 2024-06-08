@@ -1,0 +1,11 @@
+
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$5f0799fa-9b46-41dd-9428-69ff9650b508
+
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(«šóğJ$42d0d8b2-702c-4025-a6f4-d1b73e475c0a
+”
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Í÷™«üÿÿÿÿJ$601758fe-edef-4167-a6a7-f4fc63deb1f7
+‰
+java:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(Í÷™«üÿÿÿÿJ$dfada381-38cf-4652-aef9-b12f603cf6bb
+|	java:S125"<This block of commented-out lines of code should be removed.(”Ç¯ÎşÿÿÿÿJ$c143e4ed-4365-46ce-8e62-bdb45055f893
+w	java:S125"<This block of commented-out lines of code should be removed.(—ªÊJ$10eb8a2e-bd8d-4c51-9196-fc2fcae94b34

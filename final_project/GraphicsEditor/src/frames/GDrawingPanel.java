@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
+import java.io.Serial;
 import java.util.Vector;
 
 import javax.swing.JPanel;
@@ -15,6 +16,7 @@ import shapetools.GShape.EDrawingStyle;
 
 public class GDrawingPanel extends JPanel {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	private enum EDrawingState {
@@ -74,6 +76,7 @@ public class GDrawingPanel extends JPanel {
 		for (GShape shape : shapes) { shape.draw(graphics); }
 	}
 
+	// drawing
 	private void startDrawing(int x, int y) {
 		bufferedImage = new BufferedImage(
 				this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -85,7 +88,6 @@ public class GDrawingPanel extends JPanel {
 		currentShape = shapeTool.clone();
 		currentShape.setOrigin(x, y);
 	}
-
 	private void keepDrawing(int x, int y) {
 		currentShape.movePoint(x, y);
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
@@ -93,14 +95,26 @@ public class GDrawingPanel extends JPanel {
 		getGraphics().drawImage(
 				bufferedImage, 0, 0, this.getWidth(), this.getHeight(), this);
 	}
-
 	private void continueDrawing(int x, int y) { currentShape.addPoint(x, y); }
-
 	private void stopDrawing(int x, int y) {
-//		currentShape.addPoint(x, y);
+		//currentShape.addPoint(x, y);
 		shapes.add(currentShape);
 		currentShape.setSelected(this.getGraphics(),x, y);
 	}
+
+	// moving
+	private void startMoving() {
+
+	}
+	private void keepMoving() {
+
+	}
+	private void stopMoving() {
+
+	}
+
+
+
 	private GShape onShape(int x, int y) {
 		for(GShape shape : this.shapes) {
 			boolean isShape =shape.onShape(x,y);

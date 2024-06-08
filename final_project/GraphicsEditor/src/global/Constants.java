@@ -11,7 +11,7 @@ public class Constants {
 	public enum EShapeButtons {
 		eRactangle("rectangle", new GRectangle()),
 		eOval("oval", new GOval()),
-		eLine("line", new GLine()), 
+		eLine("line", new GLine()),
 		ePolygon("polygon", new GPolygon());
 	
 		private String text;
@@ -40,7 +40,6 @@ public class Constants {
 			
 			private String text;
 			private EMenu(String text) { this.text = text; }
-
 			public String getText() { return this.text; }
 		}
 	}
