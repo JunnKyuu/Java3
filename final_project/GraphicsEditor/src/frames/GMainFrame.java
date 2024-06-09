@@ -2,6 +2,7 @@ package frames;
 
 import java.awt.BorderLayout;
 import java.awt.LayoutManager;
+import java.io.Serial;
 
 import javax.swing.*;
 
@@ -9,6 +10,7 @@ import global.Constants;
 
 public class GMainFrame extends JFrame {
 
+	@Serial
 	private static final long serialVersionUID = 1L;
 
 	private GMenuBar menuBar;

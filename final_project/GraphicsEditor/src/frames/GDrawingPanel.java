@@ -1,6 +1,7 @@
 package frames;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -8,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.Serial;
 import java.util.Vector;
 
-import javax.swing.JPanel;
+import javax.swing.*;
 
 import shapetools.GShape;
 import shapetools.GShape.EAnchors;
@@ -25,12 +26,14 @@ public class GDrawingPanel extends JPanel {
 		eNPState,
 		eTransformation;
 	}
+
 	private enum ETransformation {
 		eDraw,
 		eMove,
 		eResize,
 		eRotate
 	}
+
 	private EDrawingState eDrawingState;
 	private ETransformation eTransformation;
 
@@ -38,7 +41,7 @@ public class GDrawingPanel extends JPanel {
 	private Vector<GShape> shapes;
 	private GShape shapeTool;
 	private GShape currentShape;
-
+	private Color color;
 	private BufferedImage bufferedImage;
 	private Graphics2D graphics;
 
@@ -55,10 +58,11 @@ public class GDrawingPanel extends JPanel {
 		this.addMouseMotionListener(mouseEventHandler);
 
 		// dynamic components
-		this.shapes = new Vector<GShape>();
+		this.shapes = new Vector<>();
 	}
 
-	public void initialize() {}
+	public void initialize() {
+	}
 
 	public void setShapeTool(GShape shapeTool) {
 		this.shapeTool = shapeTool;
@@ -69,31 +73,36 @@ public class GDrawingPanel extends JPanel {
 	}
 
 	public void setShapes(Object object) {
-		this.shapes = (Vector<GShape>)object;
+		this.shapes = (Vector<GShape>) object;
 	}
 
 	public void paint(Graphics graphics) {
-		for (GShape shape : shapes) { shape.draw(graphics); }
+		for (GShape shape : shapes) {
+			shape.draw(graphics);
+		}
 	}
 
 	// drawing
 	private void startDrawing(int x, int y) {
 		bufferedImage = new BufferedImage(this.getWidth(), this.getHeight(), BufferedImage.TYPE_INT_RGB);
-		graphics = (Graphics2D)bufferedImage.getGraphics();
-		graphics.setColor(this.getForeground());
+		graphics = (Graphics2D) bufferedImage.getGraphics();
 		graphics.setBackground(this.getBackground());
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
 
 		currentShape = shapeTool.clone();
 		currentShape.setOrigin(x, y);
+		currentShape.setColor(color); // 도형 색상 설정
+		graphics.setColor(color);
 	}
 	private void keepDrawing(int x, int y) {
 		currentShape.movePoint(x, y);
 		graphics.clearRect(0, 0, this.getWidth(), this.getHeight());
+
 		for (GShape shape : shapes) {
 			shape.draw(graphics); // 기존 도형들을 이미지 버퍼에 그림
 		}
 		currentShape.drag(graphics); // 새로운 도형을 이미지 버퍼에 그림
+
 		Graphics2D g2d = (Graphics2D) getGraphics();
 		g2d.drawImage(bufferedImage, 0, 0, this); // 이미지 버퍼에서 화면으로 복사
 		g2d.dispose();
@@ -104,31 +113,58 @@ public class GDrawingPanel extends JPanel {
 	private void stopDrawing(int x, int y) {
 		currentShape.addPoint(x, y);
 		shapes.add(currentShape);
-		currentShape.setSelected(this.getGraphics(),x, y);
+		currentShape.setColor(color); // 도형 색상 설정
+		currentShape.setSelected(this.getGraphics(), x, y);
 	}
 
 	// moving
-	private void startMoving() {
-
+	private void startMoving(MouseEvent e) {
+		if (currentShape != null) {
+			currentShape.startMove(getGraphics(), e.getX(), e.getY());
+		}
 	}
-	private void keepMoving() {
 
-	}
-	private void stopMoving() {
+	public void keepMoving(MouseEvent e) {
+		if (currentShape != null) {
+			Graphics2D tempGraphics = (Graphics2D) bufferedImage.getGraphics();
+			tempGraphics.setColor(color); // 도형의 색상으로 설정
+			tempGraphics.setBackground(this.getBackground());
+			tempGraphics.clearRect(0, 0, this.getWidth(), this.getHeight());
 
+			for (GShape shape : shapes) {
+				shape.draw(tempGraphics); // 기존 도형들을 이미지 버퍼에 그림
+			}
+			currentShape.keepMove(tempGraphics, e.getX(), e.getY());
+
+			Graphics2D g2d = (Graphics2D) getGraphics();
+			g2d.drawImage(bufferedImage, 0, 0, this); // 이미지 버퍼에서 화면으로 복사
+			g2d.dispose();
+		}
 	}
+
+	private void stopMoving(MouseEvent e) {
+		if (currentShape != null) {
+			currentShape.stopMove(getGraphics(), e.getX(), e.getY());
+			currentShape.setColor(color); // 도형 색상 설정
+			repaint();
+		}
+	}
+
+
 
 	private GShape onShape(int x, int y) {
-		for(GShape shape : this.shapes) {
-			boolean isShape =shape.onShape(x,y);
-			if(isShape) { return shape; }
+		for (GShape shape : this.shapes) {
+			boolean isShape = shape.onShape(x, y);
+			if (isShape) {
+				return shape;
+			}
 		}
 		return null;
 	}
 
-	private void changeCoursor(int x, int y) {
+	private void changeCursor(int x, int y) {
 		GShape gShape = this.onShape(x, y);
-		if(gShape == null) {
+		if (gShape == null) {
 			this.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
 		} else {
 			this.setCursor(gShape.getCursor());
@@ -143,7 +179,7 @@ public class GDrawingPanel extends JPanel {
 					startDrawing(e.getX(), e.getY());
 					eDrawingState = EDrawingState.eNPState;
 				} else {
-					startDrawing(e.getX(),e.getY());
+					startDrawing(e.getX(), e.getY());
 					eDrawingState = EDrawingState.e2PState;
 				}
 			} else if (eDrawingState == EDrawingState.eNPState) {
@@ -151,12 +187,14 @@ public class GDrawingPanel extends JPanel {
 				eDrawingState = EDrawingState.eNPState;
 			}
 		}
+
 		private void mouse2Clicked(MouseEvent e) {
 			if (eDrawingState == EDrawingState.eNPState) {
 				stopDrawing(e.getX(), e.getY());
 				eDrawingState = EDrawingState.eIdle;
 			}
 		}
+
 		@Override
 		public void mouseClicked(MouseEvent e) {
 			if (e.getClickCount() == 1) {
@@ -165,6 +203,7 @@ public class GDrawingPanel extends JPanel {
 				mouse2Clicked(e);
 			}
 		}
+
 		@Override
 		public void mouseMoved(MouseEvent e) {
 			if (eDrawingState == EDrawingState.eNPState) {
@@ -172,40 +211,42 @@ public class GDrawingPanel extends JPanel {
 			} else if (eDrawingState == EDrawingState.e2PState) {
 				keepDrawing(e.getX(), e.getY());
 			} else {
-				changeCoursor(e.getX(), e.getY());
+				changeCursor(e.getX(), e.getY());
 			}
 		}
+
 		@Override
 		public void mousePressed(MouseEvent e) {
 			if (eDrawingState == EDrawingState.eIdle) {
-				currentShape = onShape(e.getX(),e.getY());
-				if(currentShape == null) {
+				currentShape = onShape(e.getX(), e.getY());
+				if (currentShape == null) {
 					if (shapeTool.getEDrawingStyle() == EDrawingStyle.e2PStyle) {
 						startDrawing(e.getX(), e.getY());
 						eDrawingState = EDrawingState.e2PState;
 					}
 				} else {
-					if(currentShape.getSelectedAnchor().equals(EAnchors.eMM)) {
-						currentShape.startMove(getGraphics(),e.getX(),e.getY());
-					} else if (currentShape.getSelectedAnchor().equals(EAnchors.eRR)){
+					currentShape.setColor(color);
+					if (currentShape.getSelectedAnchor().equals(EAnchors.eMM)) {
+						startMoving(e);
+					} else if (currentShape.getSelectedAnchor().equals(EAnchors.eRR)) {
 						// rotate
 					} else {
 						// resize
-						currentShape.startResize(getGraphics(),e.getX(),e.getY());
+						currentShape.startResize(getGraphics(), e.getX(), e.getY());
 					}
 					eDrawingState = EDrawingState.eTransformation;
 				}
-					//transforamtion
-//					eTransformation = ETransformation.
 			}
 		}
+
 		@Override
 		public void mouseDragged(MouseEvent e) {
 			if (eDrawingState == EDrawingState.e2PState) {
 				keepDrawing(e.getX(), e.getY());
 			} else if (eDrawingState == EDrawingState.eTransformation) {
+				currentShape.setColor(color);
 				if (currentShape.getSelectedAnchor().equals(EAnchors.eMM)) {
-					currentShape.keepMove(getGraphics(), e.getX(), e.getY());
+					keepMoving(e);
 				} else if (currentShape.getSelectedAnchor().equals(EAnchors.eRR)) {
 					// rotate
 				} else {
@@ -214,27 +255,46 @@ public class GDrawingPanel extends JPanel {
 				}
 			}
 		}
+
 		@Override
 		public void mouseReleased(MouseEvent e) {
 			if (eDrawingState == EDrawingState.e2PState) {
 				stopDrawing(e.getX(), e.getY());
 				eDrawingState = EDrawingState.eIdle;
-			} else if(eDrawingState == EDrawingState.eTransformation) {
-//				currentShape.stopMove(getGraphics(),e.getX(),e.getY());
+			} else if (eDrawingState == EDrawingState.eTransformation) {
 				if (currentShape.getSelectedAnchor().equals(EAnchors.eMM)) {
-					currentShape.stopMove(getGraphics(), e.getX(), e.getY());
+					stopMoving(e);
 				} else if (currentShape.getSelectedAnchor().equals(EAnchors.eRR)) {
 					// rotate
 				} else {
 					// resize
 					currentShape.stopResize(getGraphics(), e.getX(), e.getY());
 				}
+				currentShape.setColor(color);
 				eDrawingState = EDrawingState.eIdle;
 			}
 		}
+
 		@Override
-		public void mouseEntered(MouseEvent e) {}
+		public void mouseEntered(MouseEvent e) { }
 		@Override
-		public void mouseExited(MouseEvent e) {}
+		public void mouseExited(MouseEvent e) { }
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		color = JColorChooser.showDialog(null, "Select Color", Color.BLACK); // 다이얼로그 창 제목 변경
+		if (color != null) {
+			if (currentShape != null) {
+				currentShape.setColor(color); // currentShape에 색상 할당
+				repaint(); // 선택한 색상으로 다시 그리기
+			} else {
+				if (shapeTool != null) {
+					shapeTool.setColor(color);
+					repaint();
+				}
+			}
+		}
 	}
 }
+
+

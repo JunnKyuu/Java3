@@ -1,10 +1,6 @@
 package global;
 
-import shapetools.GLine;
-import shapetools.GOval;
-import shapetools.GPolygon;
-import shapetools.GRectangle;
-import shapetools.GShape;
+import shapetools.*;
 
 public class Constants {
 
@@ -29,8 +25,8 @@ public class Constants {
 	public final static int NUM_POINTS = 20;
 
 	public static class GMainFrame{
-		public final static int WIDTH= 1000;
-		public final static int HEIGHT= 600;
+		public final static int WIDTH= 1200;
+		public final static int HEIGHT= 700;
 	}
 
 	public static class GMenuBar{

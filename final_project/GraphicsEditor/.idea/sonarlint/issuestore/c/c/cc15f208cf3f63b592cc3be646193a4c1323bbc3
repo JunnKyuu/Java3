@@ -1,56 +1,65 @@
 
-˜	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½×„²ÿÿÿÿÿ8Úşş¿ÿ1J$95650338-54e2-490a-9e71-cd89d1e315bb
-“	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ä™Ú8Úşş¿ÿ1J$75983193-5c91-4adb-b7e3-627179f4a29c
+˜	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½×„²ÿÿÿÿÿ8‚¾ìŞÿ1J$2f381816-5c26-4d11-957a-aefbdda4be39
+“	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ä™Ú8‚¾ìŞÿ1J$01dd2e55-7599-4f78-bdfe-af007229a027
+™
+java:S1104"QMake shape a static final constant or non-public and provide accessors if needed.(ùÊÀäşÿÿÿÿ8ƒ¾ìŞÿ1J$6c263b85-12b1-49b5-bdf1-0748294dbbfb
+”
+java:S1104"QMake color a static final constant or non-public and provide accessors if needed.(ê·®©8ƒ¾ìŞÿ1J$e85cb990-fd96-4903-be8a-6a389648a282
 ‰
-java:S2184N"ACast one of the operands of this addition operation to a "float".(í—å™úÿÿÿÿ8Üşş¿ÿ1J$8a9658ed-41ef-4df2-a768-cf97a0aac36c
+java:S2184g"ACast one of the operands of this addition operation to a "float".(í—å™úÿÿÿÿ8…¾ìŞÿ1J$2a4d48c2-7554-4b9a-a9b9-76cab046ab15
 Œ
-java:S2184N"DCast one of the operands of this subtraction operation to a "float".(í—å™úÿÿÿÿ8Üşş¿ÿ1J$39861373-8136-4e4b-a763-94a5fbb60bcf
+java:S2184g"DCast one of the operands of this subtraction operation to a "float".(í—å™úÿÿÿÿ8†¾ìŞÿ1J$a9c4a3a3-869b-488f-b261-ff1a91553298
 ‰
-java:S2184O"ACast one of the operands of this addition operation to a "float".(¸ºğÎøÿÿÿÿ8Üşş¿ÿ1J$6c8a937f-c7bc-4d67-81b4-678bb576fcaa
+java:S2184h"ACast one of the operands of this addition operation to a "float".(¸ºğÎøÿÿÿÿ8†¾ìŞÿ1J$3b8d7942-b7cc-4e4b-9339-6a9035b784dc
 „
-java:S2184P"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8Üşş¿ÿ1J$94a8816c-8f96-4c4f-ae12-20934925f002
+java:S2184i"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8†¾ìŞÿ1J$218aa3fa-628c-4110-bb94-a95dc3d17950
 „
-java:S2184P"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8Üşş¿ÿ1J$8b6545a4-04bf-4c02-be4e-44e4a94953d1
+java:S2184i"ACast one of the operands of this addition operation to a "float".(á‰ÑÆ8†¾ìŞÿ1J$50244f6e-7e56-4f91-9f46-c87a7d4048d3
 ƒ
-java:S2184Q"ACast one of the operands of this addition operation to a "float".(úÍºk8Üşş¿ÿ1J$6f57c03a-46d7-4a9f-84df-357139263fd4
+java:S2184j"ACast one of the operands of this addition operation to a "float".(úÍºk8†¾ìŞÿ1J$17d6ec9a-0f8b-4823-a876-57316bfca4fc
 ƒ
-java:S2184Q"ACast one of the operands of this addition operation to a "float".(úÍºk8Üşş¿ÿ1J$c41f20d1-da8b-4d11-b5ab-138772a1c3d9
+java:S2184j"ACast one of the operands of this addition operation to a "float".(úÍºk8†¾ìŞÿ1J$38349c03-58a6-47a5-be0c-b132ef3f3967
 ‰
-java:S2184R"ACast one of the operands of this addition operation to a "float".(ø‘ÚÃúÿÿÿÿ8Üşş¿ÿ1J$f8634804-068d-4af3-96de-129c1c882d3e
+java:S2184k"ACast one of the operands of this addition operation to a "float".(ø‘ÚÃúÿÿÿÿ8†¾ìŞÿ1J$a2f48a86-5a53-4eb3-88bb-21c1ba5636bf
 ‰
-java:S2184T"ACast one of the operands of this addition operation to a "float".(©ì´şıÿÿÿÿ8àá†Àÿ1J$65b8214d-1167-47af-bd69-2ee64b642553
+java:S2184m"ACast one of the operands of this addition operation to a "float".(©ì´şıÿÿÿÿ8†¾ìŞÿ1J$f6a6db4f-0775-4a1d-a403-c0257d2efe2b
 ‰
-java:S2184U"ACast one of the operands of this addition operation to a "float".(úâÜ€ÿÿÿÿÿ8àá†Àÿ1J$637f0247-2b1b-48cc-8528-ef87f3f7ca8c
+java:S2184n"ACast one of the operands of this addition operation to a "float".(úâÜ€ÿÿÿÿÿ8†¾ìŞÿ1J$596e5e2c-f9f7-4361-ae54-10c6fa366b73
 ‰
-java:S2184V"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8Üşş¿ÿ1J$af78f140-c320-4253-9d51-932f4b3f039e
+java:S2184o"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8†¾ìŞÿ1J$67334b72-f108-4fc2-afa2-e07a4cb53ed1
 ‰
-java:S2184V"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8áá†Àÿ1J$0256a3dc-f8ce-48f9-8302-f6a30e394339
-‰
-java:S2184ª"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8áá†Àÿ1J$3d62003c-9cde-4b5f-86a4-3e8c4745d672
-‰
-java:S2184ª"ECast one of the operands of this subtraction operation to a "double".(•Œ ”8áá†Àÿ1J$25e00f62-9a88-4b25-a333-b0acc741a42f
+java:S2184o"ACast one of the operands of this addition operation to a "float".(ÒÍ›íùÿÿÿÿ8†¾ìŞÿ1J$4e0322ba-893a-45e2-8ba2-007149a59ca5
+
+java:S2184Ä"ECast one of the operands of this subtraction operation to a "double".(®®°¹üÿÿÿÿ8†¾ìŞÿ1J$288f50e9-0a95-4fc9-8f23-409bf4655917
+
+java:S2184Ä"ECast one of the operands of this subtraction operation to a "double".(®®°¹üÿÿÿÿ8†¾ìŞÿ1J$897e803e-29b7-49dc-a612-33422698e6f8
+“
+java:S2259¯"JA "NullPointerException" could be thrown; "resizeFactor" is nullable here.(ôª©šşÿÿÿÿ8¯¾ìŞÿ1J$5906a01a-a8e6-4466-896e-45a8bc69b307
+¤
+java:S4165²"`Remove this useless assignment; "dy" already holds the assigned value along all execution paths.(º’¸Ã8°¾ìŞÿ1J$d479558f-0d10-4292-9ce2-6239bebe2e88
+¤
+java:S4165±"`Remove this useless assignment; "dx" already holds the assigned value along all execution paths.(ì‹˜8°¾ìŞÿ1J$5b515c8e-88f5-4bec-8271-b2a37328c4de
 £
-java:S4144´"ZUpdate this method so that its implementation is not identical to "startMove" on line 152.(® “ãùÿÿÿÿ8‰â†Àÿ1J$7cb4871e-d338-45ea-8dda-327e88cb3187
+java:S4144Ğ"ZUpdate this method so that its implementation is not identical to "startMove" on line 168.(® “ãùÿÿÿÿ8³¾ìŞÿ1J$5577ef57-3d4b-4b2a-9124-dde337453543
 ‡
-java:S1659"?Declare "y1" and all following declarations on a separate line.(Î¡†§şÿÿÿÿ8›‡ö¿ÿ1J$794412c4-eaff-4348-a23c-19a35a33d574
+java:S1659"?Declare "y1" and all following declarations on a separate line.(Î¡†§şÿÿÿÿ8¸¾ìŞÿ1J$a9aeb53e-9f82-4333-afcc-31ba7939f445
 h
-java:S16591" Declare "sy" on a separate line.(ËÆŞ‘øÿÿÿÿ8ìşş¿ÿ1J$26f01394-180c-48f3-8672-2ea2527fdcb8
+java:S16594" Declare "sy" on a separate line.(ËÆŞ‘øÿÿÿÿ8¸¾ìŞÿ1J$4a4ffad9-6575-4fce-8aca-fd7758eb1150
 h
-java:S16592" Declare "dy" on a separate line.(½ú¿µùÿÿÿÿ8ìşş¿ÿ1J$234bb4a8-0abd-481f-9947-19cb1af19236
-™
-java:S14501"QRemove the "sx" field and declare it as a local variable in the relevant methods.(ËÆŞ‘øÿÿÿÿ8ìşş¿ÿ1J$e15a1fab-f1e4-4c6d-8b05-55811573be37
-™
-java:S14501"QRemove the "sy" field and declare it as a local variable in the relevant methods.(ËÆŞ‘øÿÿÿÿ8íşş¿ÿ1J$1cdf879f-d033-46fc-b226-6f6d414969bf
+java:S16595" Declare "dy" on a separate line.(½ú¿µùÿÿÿÿ8¹¾ìŞÿ1J$6a525fe4-82fb-4b2c-8bbe-d39322a31773
 |
-java:S5993`"9Change the visibility of this constructor to "protected".(ÛÉ®Ç8íşş¿ÿ1J$87cf442d-00cc-49b2-bf1c-06b2d655ec3b
-j
-java:S1948"'Make "shape" transient or serializable.(â­àà8‡ö¿ÿ1J$0898553a-6f58-4c48-a70a-ade279aec3f6
+java:S59937"9Change the visibility of this constructor to "protected".(ÛÉ®Ç8º¾ìŞÿ1J$b83f97fc-5cc5-452f-8cc6-eff353c91c2d
+o
+java:S1948"'Make "shape" transient or serializable.(ùÊÀäşÿÿÿÿ8»¾ìŞÿ1J$189390de-d518-43af-9957-32026243073c
 q
-java:S1172="/Remove these unused method parameters "x", "y".(½Ç”z8òşş¿ÿ1J$06fd10c3-c8c6-464f-8bf8-87988144af40
+java:S1172W"/Remove these unused method parameters "x", "y".(½Ç”z8Ã¾ìŞÿ1J$e4a7d68b-830f-4468-8fff-f2d4ee8f3cb8
 –
-java:S2975n"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(…œŒÊ8õşş¿ÿ1J$c5da933b-a74a-4e08-9ec6-4e80abd85b1e
-„	java:S125¦"<This block of commented-out lines of code should be removed.(”Ç¯Îşÿÿÿÿ8Àâ†Àÿ1J$43b10199-91c3-4a5a-a438-fb943135d503
+java:S2975{"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(…œŒÊ8Ç¾ìŞÿ1J$eb01ff1b-f192-44d8-85dc-09b25448e35c
 x
-java:S1172¯"/Remove these unused method parameters "x", "y".(«‡€Øıÿÿÿÿ8Åâ†Àÿ1J$807c815d-9f3d-4562-a6db-a0790c0a510b
+java:S1172Ë"/Remove these unused method parameters "x", "y".(«‡€Øıÿÿÿÿ8Ë¾ìŞÿ1J$b0c2fdd3-dc0a-4129-a82d-8fb4d6e35826
 s
-java:S1172ú"/Remove these unused method parameters "x", "y".(¬»ú›8ûşş¿ÿ1J$840e149d-d95c-4944-a9d4-72aa23ad7c53
+java:S1656±"/Remove or correct this useless self-assignment.(ì‹˜8Ñ¾ìŞÿ1J$9cf2014a-b234-45f2-bc37-ff5a119b6729
+s
+java:S1656²"/Remove or correct this useless self-assignment.(º’¸Ã8Ò¾ìŞÿ1J$82619337-ee73-4334-ba81-8249d66c6658
+s
+java:S1172À"/Remove these unused method parameters "x", "y".(¬»ú›8Ó¾ìŞÿ1J$6ace062a-6d18-4216-8a27-6cb9d46721f5

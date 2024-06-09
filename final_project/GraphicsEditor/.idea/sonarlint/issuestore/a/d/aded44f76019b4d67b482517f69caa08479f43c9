@@ -1,18 +1,11 @@
 
-¡
-java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü¢ªÌûÿÿÿÿ8º„÷Àÿ1J$45024eab-b460-4dd4-a563-35e689f0db9a
 w
-java:S1948*"/Make "bufferedImage" transient or serializable.(¶—Ìüÿÿÿÿ8Í„÷Àÿ1J$29f2da7e-578e-4e03-b82c-c8bc9e710f5c
+java:S1948-"/Make "bufferedImage" transient or serializable.(¶—Ìüÿÿÿÿ8™ÑïÇÿ1J$e9994db5-37d2-4463-98bd-2837dd82f9a3
 r
-java:S1948+"*Make "graphics" transient or serializable.(õùÂšıÿÿÿÿ8Í„÷Àÿ1J$a6d62e7c-1262-4fc9-a542-02bcbf912a5b
+java:S1948."*Make "graphics" transient or serializable.(õùÂšıÿÿÿÿ8™ÑïÇÿ1J$7484aaf8-bf2e-467e-ad4f-95a254907086
 ¨
-java:S1149&"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì8Î„÷Àÿ1J$533360f7-aec7-45fc-92cb-3c1b9a2bef59
+java:S1149)"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(â­·ì8™ÑïÇÿ1J$67e8fb3b-afdf-46ce-a409-ac3b54672229
 ¨
-java:S1149C"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ8Î„÷Àÿ1J$1bfbf46a-c091-40c8-9a49-2242d276f330
-	java:S125ß"<This block of commented-out lines of code should be removed.(Æé¡¦8ß„÷Àÿ1J$376e65b8-87e7-4dc9-b096-2e04b75c22c3
-x
-java:S1144o"0Remove this unused private "startMoving" method.(‚¤½Ôşÿÿÿÿ8á„÷Àÿ1J$9b760ab8-3297-42d5-8669-74277b4256a9
-w
-java:S1144r"/Remove this unused private "keepMoving" method.(Á¼Ñºúÿÿÿÿ8á„÷Àÿ1J$3d2448a7-c78a-4cbb-ac76-aee7dbbb0b69
-r
-java:S1144u"/Remove this unused private "stopMoving" method.(©ìãÀ8á„÷Àÿ1J$36106842-2363-4814-965e-bf03e1fc6891
+java:S1149G"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(×É©Ğ8™ÑïÇÿ1J$baccaa1a-3ffa-4290-9274-5ba1cdd91db2
+q
+java:S1172œ"(Remove this unused method parameter "e".(¼ Òşüÿÿÿÿ8§ÑïÇÿ1J$4eef0e47-2e78-464c-9684-b5c7480958a9
