@@ -1,16 +1,20 @@
 package node;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import lexicalAnalyzer.EKeyword;
 import lexicalAnalyzer.LexicalAnalyzer;
 
 public class Program extends Node {
-
     private String name;
     private HeaderSegment headerSegment;
     private DataSegment dataSegment;
     private CodeSegment codeSegment;
 
-    public Program(LexicalAnalyzer lexicalAnalyzer) { super(lexicalAnalyzer); }
+    public Program(LexicalAnalyzer lexicalAnalyzer) {
+        super(lexicalAnalyzer);
+    }
 
     @Override
     public String parse(String token) throws Exception {
@@ -55,9 +59,24 @@ public class Program extends Node {
 
         return null;
     }
-
-    public DataSegment getDataSegment() { return dataSegment; }
+    
+    public DataSegment getDataSegment() {
+        return dataSegment;
+    }
 
     @Override
-    public String generate() throws Exception { return null; }
+    public List<String> generate() throws Exception {
+        List<String> machineCode = new ArrayList<>();
+        
+        machineCode.add("0x01"); // .program
+        machineCode.add("0x02"); // .header
+        machineCode.add("0x03"); // .data
+        machineCode.add("0x04"); // .code
+
+        machineCode.addAll(headerSegment.generate());
+        machineCode.addAll(dataSegment.generate());
+        machineCode.addAll(codeSegment.generate());
+
+        return machineCode;
+    }
 }

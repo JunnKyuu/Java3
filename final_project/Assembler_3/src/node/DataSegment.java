@@ -1,9 +1,10 @@
 package node;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.Vector;
-
 import lexicalAnalyzer.EKeyword;
 import lexicalAnalyzer.LexicalAnalyzer;
 import symbolTable.Symbol;
@@ -31,14 +32,26 @@ public class DataSegment extends Node {
             this.symbolTable.add(symbol);
             this.symbolNames.add(name);
             currentAddress += size;
+
             name = lexicalAnalyzer.getToken();
         }
         return name;
     }
 
-    public Vector<Symbol> getSymbolTable() { return symbolTable; }
-    public Set<String> getSymbolNames() { return symbolNames; }
+    public Vector<Symbol> getSymbolTable() {
+        return symbolTable;
+    }
+
+    public Set<String> getSymbolNames() {
+        return symbolNames;
+    }
 
     @Override
-    public String generate() throws Exception { return null; }
+    public List<String> generate() throws Exception {
+        List<String> machineCode = new ArrayList<>();
+        for (Symbol symbol : symbolTable) {
+            machineCode.add("0x12 " + symbol.getName() + " " + symbol.getSize());
+        }
+        return machineCode;
+    }
 }

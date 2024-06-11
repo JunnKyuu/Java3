@@ -1,5 +1,7 @@
 package node;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 import java.util.Set;
 import lexicalAnalyzer.LexicalAnalyzer;
@@ -30,5 +32,11 @@ public class CodeSegment extends Node {
     }
 
     @Override
-    public String generate() throws Exception { return null; }
+    public List<String> generate() throws Exception {
+        List<String> machineCode = new ArrayList<>();
+        for (Instruction instruction : instructions) {
+            machineCode.addAll(instruction.generate());
+        }
+        return machineCode;
+    }
 }

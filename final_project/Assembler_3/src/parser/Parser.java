@@ -1,32 +1,25 @@
 package parser;
 
-import codeGenerator.CodeGenerator;
-import lexicalAnalyzer.LexicalAnalyzer;
 import node.Program;
+import lexicalAnalyzer.LexicalAnalyzer;
+import codeGenerator.CodeGenerator;
 
 public class Parser {
     private LexicalAnalyzer lexicalAnalyzer;
+    private CodeGenerator codeGenerator;
     private Program program;
-
-    public Parser() {}
 
     public void associate(LexicalAnalyzer lexicalAnalyzer, CodeGenerator codeGenerator) {
         this.lexicalAnalyzer = lexicalAnalyzer;
+        this.codeGenerator = codeGenerator;
     }
 
-
     public void parse() throws Exception {
-        String token = lexicalAnalyzer.getToken();
-        if (token.equals(".program")) {
-            this.program = new Program(lexicalAnalyzer);
-            this.program.parse(token);
-        } else {
-            throw new Exception("Invalid start of program, found: " + token);
-        }
+        program = new Program(lexicalAnalyzer);
+        program.parse(null);
     }
 
     public Program getProgram() { return program; }
-
     public void initialize() {}
     public void finish() {}
 }

@@ -1,7 +1,11 @@
 package node;
 
 import lexicalAnalyzer.LexicalAnalyzer;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Instruction extends Node {
 
@@ -15,15 +19,37 @@ public class Instruction extends Node {
         eEnd(".end");
 
         private String text;
+        private static final Map<String, String> COMMAND_MAP = new HashMap<>();
 
-        ECommand(String text) { this.text = text; }
-        public String getText() { return this.text; }
+        static {
+            COMMAND_MAP.put("add", "0x05");
+            COMMAND_MAP.put("move", "0x06");
+            COMMAND_MAP.put("compare", "0x07");
+            COMMAND_MAP.put("jump", "0x08");
+            COMMAND_MAP.put("ge", "0x09");
+            COMMAND_MAP.put("halt", "0x0A");
+            COMMAND_MAP.put(".end", "0x0B");
+        }
+
+        ECommand(String text) {
+            this.text = text;
+        }
+
+        public String getText() {
+            return this.text;
+        }
 
         public static ECommand fromString(String text) {
             for (ECommand command : ECommand.values()) {
-                if (command.text.equalsIgnoreCase(text)) { return command; }
+                if (command.text.equalsIgnoreCase(text)) {
+                    return command;
+                }
             }
             return null;
+        }
+
+        public static String getMachineCode(String command) {
+            return COMMAND_MAP.get(command.toLowerCase());
         }
     }
 
@@ -42,30 +68,26 @@ public class Instruction extends Node {
 
         for (int i = 0; i < 2; i++) {
             String nextToken = this.lexicalAnalyzer.getToken();
-            if (nextToken == null || ECommand.fromString(nextToken) != null) { return nextToken; }
-            if (!symbolTable.contains(nextToken) && !isNumeric(nextToken) && !isValidRegister(nextToken)) {
-                // label, register 확인
-            	continue;
+            if (nextToken == null || ECommand.fromString(nextToken) != null) {
+                return nextToken;
             }
             this.operand[i] = nextToken;
         }
         return this.lexicalAnalyzer.getToken();
     }
 
-    private boolean isNumeric(String str) {
-        try {
-            Integer.parseInt(str);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
+    public List<String> generate() {
+        List<String> code = new ArrayList<>();
+        if (eCommand != null) {
+            StringBuilder instructionCode = new StringBuilder();
+            instructionCode.append(ECommand.getMachineCode(eCommand.getText()));
+            for (String op : operand) {
+                if (op != null) {
+                    instructionCode.append(" ").append(op);
+                }
+            }
+            code.add(instructionCode.toString());
         }
+        return code;
     }
-
-    private boolean isValidRegister(String str) {
-        // :, r0, r1,, 처리
-        return str.matches("r\\d+") || str.endsWith(":");
-    }
-
-    @Override
-    public String generate() throws Exception { return null; }
 }

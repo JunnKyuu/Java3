@@ -20,9 +20,6 @@ public class Symbol {
 
     @Override
     public String toString() {
-        return "{name: " + name + ", " +
-        		"size: " + size + ", " + 
-        		"type: " + type + ", " + 
-        		"address: ds + " + address + "}";
+        return "{name: " + name + ", size: " + size + ", type: " + type + ", address: ds + " + address + "}";
     }
 }

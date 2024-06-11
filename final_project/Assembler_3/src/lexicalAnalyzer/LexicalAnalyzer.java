@@ -34,9 +34,8 @@ public class LexicalAnalyzer {
         if (currentIndex < tokens.size()) { return tokens.get(currentIndex++); }
         return null;
     }
-
     public List<String> getAllTokens() { return new ArrayList<>(tokens); }
-
+    
     public void finalize() { scanner.close(); }
     public void finish() { scanner.close(); }
 }

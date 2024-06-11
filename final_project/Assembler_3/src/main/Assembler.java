@@ -1,12 +1,12 @@
 package main;
 
-import java.util.List;
-import java.util.Vector;
-
 import codeGenerator.CodeGenerator;
 import lexicalAnalyzer.LexicalAnalyzer;
 import parser.Parser;
 import symbolTable.Symbol;
+
+import java.util.List;
+import java.util.Vector;
 
 public class Assembler {
 
@@ -18,12 +18,13 @@ public class Assembler {
         this.lexicalAnalyzer = new LexicalAnalyzer("test"); // 매개변수로 파일 이름
         this.parser = new Parser();
         this.codeGenerator = new CodeGenerator();
+
         this.parser.associate(this.lexicalAnalyzer, this.codeGenerator);
     }
 
     public void run() {
         try {
-            // Lexical Analysis 결과 출력
+            // Lexical Analysis 출력
             List<String> tokens = this.lexicalAnalyzer.getAllTokens();
             System.out.println("--------------- lexical analysis ---------------");
             System.out.println("tokens = [");
@@ -39,20 +40,18 @@ public class Assembler {
             System.out.println("]\n");
 
             this.parser.parse();
-            
-            // Symbol Table 출력
+
+            // Symbol Table 생성
             Vector<Symbol> symbolTable = this.parser.getProgram().getDataSegment().getSymbolTable();
-            System.out.println("-------------- symbol table --------------");
-            System.out.println("| name    | size | type     | address     |");
-            System.out.println("------------------------------------------");
+            System.out.println("--------------- symbol table ---------------");
             for (Symbol symbol : symbolTable) {
-                System.out.printf("| %-7s | %-4d | %-7s | ds + %-6d |%n", 
-                                  symbol.getName(), 
-                                  symbol.getSize(), 
-                                  symbol.getType(), 
-                                  symbol.getAddress());
+                System.out.println(symbol);
             }
-            System.out.println("------------------------------------------");
+
+            // Machine Code 생성
+            codeGenerator.setProgram(this.parser.getProgram());
+            codeGenerator.generate();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
